@@ -1,0 +1,124 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    flex-direction: column;
+    background-image: url(/images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: right -13vw bottom -110vh, left -26vw top -64vh;
+}
+
+.my-project {
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.asma {
+    width: 100%;
+    height: 135px;
+    background-color: hsl(185, 75%, 39%);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
+.asma svg {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.img img {
+    border-radius: 50%;
+}
+
+.heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.heading h1 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: hsl(229, 23%, 23%);
+}
+
+.heading h1 span {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.heading p {
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    margin-top: 0;
+}
+
+.footer {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e4e3e3;
+    width: 100%;
+    justify-content: center;
+}
+
+.mehdi {
+    line-height: 0.8;
+
+}
+
+.mehdi h2 {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.mehdi p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+}
+
+@media (max-width:600px) {
+    .parent {
+        background-position: right -200vw bottom -61vh, left -192vw top -70vh;
+    }
+}
